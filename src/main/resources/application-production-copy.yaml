@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-cob12ucf7o1s73fhtlu0-a/spring2024_database
-    username: spring2024_customer
-    password: DmuAQT0PWQq7jiNvlqBG5IBUTDkhp3NI
+    url: jdbc:postgresql://${database_host}/${database_name}
+    username: ${database_username}
+    password: ${database_password}
 
 
   jpa:
