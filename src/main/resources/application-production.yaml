@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-cob12ucf7o1s73fhtlu0-a/spring2024_database
+    url: jdbc:postgresql://dpg-cob12ucf7o1s73fhtlu0-a.ohio-postgres.render.com/spring2024_database
     username: spring2024_customer
     password: DmuAQT0PWQq7jiNvlqBG5IBUTDkhp3NI
 
