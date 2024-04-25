@@ -36,7 +36,7 @@ jobs:
 
       - name: Build and push the image
         run: |
-          docker login --username hbahramian --password ${{secrets.ACCESS_TOKEN}} ghcr.io
-          docker build -t ghcr.io/hbahramian/lab10:latest --file Dockerfile .  
-          docker push ghcr.io/hbahramian/lab10:latest 
+          docker login --username wkusper --password ${{secrets.ACCESS_TOKEN}} ghcr.io
+          docker build -t ghcr.io/wkusper/lab10:latest --file Dockerfile .  
+          docker push ghcr.io/wkusper/lab10:latest 
 
