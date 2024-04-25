@@ -1,7 +1,7 @@
 services:
-  ducks-database:
+  duck-database:
     image: postgres:alpine
-    container_name: ducks-database
+    container_name: duck-database
     ports:
       - "6001:5432"
     environment:

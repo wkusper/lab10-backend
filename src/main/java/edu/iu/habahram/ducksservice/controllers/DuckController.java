@@ -26,14 +26,14 @@ public class DuckController {
     }
 
 
-   @PostMapping
+    @PostMapping
     public int add(@RequestBody DuckData duck) {
-       try {
-           return ducksRepository.save(duck).getId();
-       } catch (Exception e) {
-           throw new RuntimeException(e);
-       }
-   }
+        try {
+            return ducksRepository.save(duck).getId();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     @GetMapping
     public Iterable<DuckData> findAll() {

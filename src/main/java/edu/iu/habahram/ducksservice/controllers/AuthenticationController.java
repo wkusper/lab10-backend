@@ -30,6 +30,7 @@ public class AuthenticationController {
             BCryptPasswordEncoder bc = new BCryptPasswordEncoder();
             String passwordEncoded = bc.encode(customer.getPassword());
             customer.setPassword(passwordEncoded);
+            System.out.println("touched");
             customerRepository.save(customer);
         } catch (Exception e) {
             throw new RuntimeException(e);

@@ -50,7 +50,7 @@ public class CustomerFileRepository {
         String passwordEncoded = bc.encode(customer.getPassword());
         String data = customer.getUsername() + ","
                 + passwordEncoded
-               + "," + customer.getEmail();
+                + "," + customer.getEmail();
         appendToFile(path, data + NEW_LINE);
     }
 
